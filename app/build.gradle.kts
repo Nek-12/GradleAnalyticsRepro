@@ -33,6 +33,19 @@ android {
         viewBinding = false
         compose = true
     }
+//
+//    applicationVariants.all {
+//        outputs.all {
+//            (this as com.android.build.gradle.internal.api.BaseVariantOutputImpl).outputFileName =
+//                "$applicationId-$versionName.apk"
+//        }
+//
+//        sourceSets {
+//            getByName(name) {
+//                kotlin.srcDir("build/generated/ksp/$name/kotlin")
+//            }
+//        }
+//    }
 
     composeOptions {
         kotlinCompilerExtensionVersion = "1.4.4"
@@ -64,7 +77,6 @@ allprojects {
         }
     }
 }
-
 
 
 dependencies {

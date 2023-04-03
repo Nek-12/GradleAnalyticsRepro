@@ -1,7 +1,45 @@
 [versions]
 gradleAndroid = "8.0.0-rc01"
 kotlin = "1.8.10"
+versionCatalogUpdatePlugin = "0.8.0"
+versionsPlugin = "0.46.0"
+serialization = "1.5.0-RC"
+gradleDoctorPlugin = "0.8.1"
+firebase = "31.4.0"
+firebase-messaging = "23.1.1"
+firebase-performance-gradle = "1.4.2"
+dependencyAnalysisPlugin = "1.19.0"
+detekt = "1.22.0"
+crashlytics-gradle = "2.9.4"
+composeDetektPlugin = "1.2.2"
+ksp = "1.8.10-1.0.9"
+atomicfu = "0.20.1"
+sqlDelight = "2.0.0-alpha05"
+gradle-analytics-plugin = "1.0.0-beta9"
+gms = "4.3.15"
+
 
 [libraries]
 android-gradle = { module = "com.android.tools.build:gradle", version.ref = "gradleAndroid" }
 kotlin-gradle = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }
+version-gradle = { module = "com.github.ben-manes:gradle-versions-plugin", version.ref = "versionsPlugin" }
+google-gms = { module = "com.google.gms:google-services", version.ref = "gms" }
+firebase-crashlytics-gradle = { module = "com.google.firebase:firebase-crashlytics-gradle", version.ref = "crashlytics-gradle" }
+firebase-performance-gradle = { module = "com.google.firebase:perf-plugin", version.ref = "firebase-performance-gradle" }
+detekt-gradle = { module = "io.gitlab.arturbosch.detekt:detekt-gradle-plugin", version.ref = "detekt" }
+sqldelight-gradle = { module = "app.cash.sqldelight:gradle-plugin", version.ref = "sqlDelight" }
+detekt-compose = { module = "ru.kode:detekt-rules-compose", version.ref = "composeDetektPlugin" }
+detekt-formatting = { module = "io.gitlab.arturbosch.detekt:detekt-formatting", version.ref = "detekt" }
+
+[plugins]
+atomicfu = { id = "kotlinx-atomicfu", version.ref = "atomicfu" }
+dependencyAnalysis = { id = "com.autonomousapps.dependency-analysis", version.ref = "dependencyAnalysisPlugin" }
+detekt = { id = "io.gitlab.arturbosch.detekt", version.ref = "detekt" }
+gradle-analytics = { id = "io.github.janbarari.gradle-analytics-plugin", version.ref = "gradle-analytics-plugin" }
+gradleDoctor = { id = "com.osacky.doctor", version.ref = "gradleDoctorPlugin" }
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
+parcelize = { id = "org.jetbrains.kotlin.plugin.parcelize", version.ref = "kotlin" }
+serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+sqldelight = { id = "app.cash.sqldelight", version.ref = "sqlDelight" }
+version-catalog-update = { id = "nl.littlerobots.version-catalog-update", version.ref = "versionCatalogUpdatePlugin" }
+versions = { id = "com.github.ben-manes.versions", version.ref = "versionsPlugin" }
